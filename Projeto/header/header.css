@@ -1,0 +1,26 @@
+.header_content {
+    background-color: #fff;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.titulo_header{
+    font-size: 2.5rem;
+}
+.button_cadastro_home {
+    background-color: #52da2d;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    box-shadow: #000 2px 2px 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+.button_cadastro_home:hover {
+    background-color: #42ad24;
+    padding: .9rem;
+}
