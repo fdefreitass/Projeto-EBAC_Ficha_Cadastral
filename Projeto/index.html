@@ -8,43 +8,82 @@
     <link rel="stylesheet" type="text/css" href="./main/main.css">
     <link rel="stylesheet" type="text/css" href="./header/header.css">
     <link rel="stylesheet" type="text/css" href="./global.css">
-    <link rel="stylesheet" type="text/css" href="./main/tela_de_cadastro/user_cadastral.css">
+    <link rel="stylesheet" type="text/css" href="./main/home/home.css">
+    <link rel="stylesheet" type="text/css" href="./main/tela_de_cadastro/user.css">
 </head>
 
 <body>
     <header>
         <div class="header_content">
             <h1 class="titulo_header">Ficha Cadastral</h1>
-            <button class="button_cadastro_home" type="submit">Fazer meu cadastro</button>    
+            <div class="buttons_header">  
+                <button class="button_header" type="submit" onclick="RestauredUser()">Home</button>
+                <button class="button_cadastro_home" type="submit" onclick="SubmitUser()">Fazer meu cadastro</button>    
+            </div>
         </div>
     </header>
 
     <main>
+        <section class="home">
+            <div class="content-home">
+                <div class="text-home">
+                    <h2>Seja bem-vindo(a) ao nosso <b>Site</b>, queremos proporcionar a você a melhor esperiência possível vamos lá cadastrar suas inforções no nosso banco de dados de clientes! Clique no botão para seguirmos.</h2>
+                </div>
+                <div class="person-home">
+                    <img src="./Images/download-removebg-preview.png" alt="personagem-segurando-um lapis">
+                </div>
+            </div>
+            <div class="button_home">
+                <button class="btn-home" type="submit" onclick="SubmitUser()">Fazer meu cadastro</button>
+            </div>
+        </section>
+
         <section class="tela_de_cadastro">
             <form action="" class="cadastral-users">
+                <h3>Preencha os dados a seguir:</h3>
                 <div class="content_cadastral_user">
                     <div class="inputs_user_section_one">
-                        <input class="input" type="text" placeholder="Nome" aria-placeholder="Nome do usuário">
-                        <input class="input" type="text" placeholder="Sua Idade" aria-placeholder="Idade do usuário">
-                        <input class="input" type="number" placeholder="Celular" aria-placeholder="Celular do usuário">
+                        <input class="inputs" type="text" placeholder="Seu Nome" aria-placeholder="Nome do usuário">
+                        <input class="inputs" type="text" placeholder="Sua Idade" aria-placeholder="Idade do usuário">
+                        <input class="inputs" type="text" placeholder="Seu Celular" aria-placeholder="Celular do usuário">
+                        <input class="inputs" type="text" placeholder="Seu Estado" aria-placeholder="Estado do usuário">
+                        <input class="inputs" type="text" placeholder="Sua Cidade" aria-placeholder="Estado do usuário">
                     </div>
-                    <div class="inputs_user_section_two">
-                        <input class="input" type="text" placeholder="Seu Estado" aria-placeholder="Estado do usuário">
-                        <input class="input" type="text" placeholder="Sua Cidade" aria-placeholder="Estado do usuário">
-                        <button class="btn-enviar-form">Enviar meus dados</button>
-                    </div>
+                    <button class="btn-enviar-form">Enviar meus dados</button>
+                </div>
+                <div class="span">
+                    <span class="span_required">Todos os dados devem estar preenchidos!</span>
                 </div>
             </form>
         </section>
 
-        <section class="users_info">
-            <div class="user info">
-                
+        <section class="content_users">
+            <div class="user_infos">
+                <div class="user_info">
+                    <ul class="static_infos">
+                        <li class="infost">Nome:</li>
+                        <li class="infost">Idade:</li>
+                        <li class="infost">Celular:</li>
+                        <li class="infost">Estado:</li>
+                        <li class="infost">Cidade:</li>
+                    </ul>
+                </div>
+                <div class="user_info">
+                    <ul class="user">
+                        <li>FELIPE DE FREITAS</li>
+                        <li>22 ANOS</li>
+                        <li>55 99112-5115:</li>
+                        <li>RIO GRANDE DO SUL:</li>
+                        <li>URUGUAIANA:</li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
 
     <script src="./header/header.js"></script>
+    <script src="./main/home/home.js"></script>
+    <script src="./main/tela_de_cadastro/user.js"></script>
     <script src="./main/main.js"></script>
 </body>
 
