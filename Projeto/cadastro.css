@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    height: 100vhd;
+    background-image: linear-gradient(90deg, var(--color-purple), var(--color-pink), var(--color-salmao));
+}
+
+/*Palheta de cores*/
+:root {
+    --color-purple: #6b3fa0;
+    --color-pink: #ff69b4;
+    --color-salmao: #fa7f72;
+    --color-white: #fff;
+    --color-black: #161616;
+    --color-grey: #ccc;
+}
+
+.formulario {
+    display: flex;
+    background-color: #fff;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 2rem;
+    max-width: 80%;
+    border-radius: 2rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+form {
+    width: 100%;
+}
+
+form>h3 {
+    margin-left: 1rem;
+}
+
+.inputs_required {
+    height: 40px;
+    width: 30%;
+    margin: .5rem;
+    padding: 1rem;
+    background-color: var(--color-grey);
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+}
+
+.span {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    display: none;
+}
+
+.span_required {
+    background-color: rgb(110, 14, 14);
+    color: var(--color-white);
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.btn_enviar_form {
+    background-image: linear-gradient(90deg, var(--color-purple), var(--color-pink), var(--color-salmao));
+    border: none;
+    width: 20%;
+    height: 40px;
+    color: var(--color-white);
+    font-size: 1rem;
+    font-weight: 700;
+    box-shadow: var(--color-black) 2px 3px 8px;
+    border-radius: .5rem;
+    margin-left: 4rem;
+    cursor: pointer;
+}
+
+.tabela {
+    display: none;
+    margin: 0 auto;
+    justify-content: center;
+    background-color: var(--color-white);
+    max-width: 80%;
+    border-radius: 1rem;
+    margin-bottom: 5rem;
+}
+
+.tabela_usuario {
+    width: 100%;
+    padding: 1rem;
+}
+
+table {
+    width: 100%;
+}
+
+thead th {
+    background-color: var(--color-salmao);
+    border-radius: 10px;
+}
+
+table td {
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--color-grey);
+}

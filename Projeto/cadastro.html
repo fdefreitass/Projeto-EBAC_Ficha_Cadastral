@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./global.css" type="text/css">
+    <link rel="stylesheet" href="./cadastro.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <div class="header_content">
+            <h1 class="titulo_header">Ficha Cadastral</h1>
+            <div class="buttons_header">
+                <ul class="btn">
+                    <a href="./index.html">Home</a>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="tela_de_cadastro">
+            <div class="formulario">
+                <form id="form" action="" class="cadastral_users">
+                    <h3>Preencha os dados a seguir:</h3>
+                    <div class="inputs_user_section_one">
+                        <input id="uname" class="inputs_required" type="text" placeholder="Seu Nome"
+                            aria-placeholder="Nome do usuário">
+                        <input id="uage" class="inputs_required" type="text" placeholder="Sua Idade"
+                            aria-placeholder="Idade do usuário">
+                        <input id="ucell" class="inputs_required" type="text" placeholder="Seu Celular"
+                            aria-placeholder="Celular do usuário">
+                    </div>
+                    <div class="inputs_user_section_one">
+                        <input id="ustate" class="inputs_required" type="text" placeholder="Seu Estado"
+                            aria-placeholder="Estado do usuário">
+                        <input id="ucidad" class="inputs_required" type="text" placeholder="Sua Cidade"
+                            aria-placeholder="Estado do usuário">
+                        <button class="btn_enviar_form">Enviar meus dados</button>
+                    </div>
+                    <div class="span">
+                        <span class="span_required">Todos os dados devem estar preenchidos!</span>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="tabela">
+            <div class="tabela_usuario">
+                <table class="user">
+                    <thead>
+                        
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <script src="./global.js"></script>
+</body>
+</html>
