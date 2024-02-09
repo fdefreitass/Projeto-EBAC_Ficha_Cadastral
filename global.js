@@ -18,22 +18,22 @@ const section = document.querySelector(".tabela")
 const table = document.querySelector(".user")
 const btnForm = document.querySelector(".btn_enviar_form")
 let linhas = '';
-const div  = document.querySelector(".tabela")
+const div = document.querySelector(".tabela")
 
 form.addEventListener("submit", (e) => {
     e.preventDefault()
     //
     validauser();
-}); 
+});
 
-function validauser () {
+function validauser() {
     const userN = userName.value;
     const userA = userAge.value;
     const userC = userCell.value;
     const userS = userState.value;
     const userCd = userCidad.value;
 
-    if (userN, userA, userC, userS, userCd == ''){
+    if (userN, userA, userC, userS, userCd == '') {
         span.style.display = "block"
     } else {
         span.style.display = "none"
@@ -41,11 +41,11 @@ function validauser () {
         createUser();
     }
 }
-function createDiv () {
+function createDiv() {
     div.style.display = "block"
 }
 
-function createUser () {
+function createUser() {
     const bodyTable = document.querySelector('tbody');
     const headTable = document.querySelector('thead');
     const usernameValue = userName.value
